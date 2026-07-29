@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SOT</title>
+<title>overkill</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -256,15 +256,15 @@
 
 <!-- ============ MUSIC (plays silently in background, no visible icon/button) ============ -->
 <audio id="bgm" loop preload="none">
-  <source src="https://raw.githubusercontent.com/unity-cpu/sot-bio/main/rewrite your wrongs.mp3" type="audio/mpeg">
+  <source src="https://raw.githubusercontent.com/unity-cpu/overkills-bio/main/misery.mp3" type="audio/mpeg">
 </audio>
 
 <div class="card">
   <div class="avatar-wrap">
-    <img class="avatar" src="https://media.discordapp.net/attachments/1480645053612425336/1532087534014697552/image.png?ex=6a6b9334&is=6a6a41b4&hm=12ab18b61be81619ac47355c1df8252be7bfcbb98a0e81a0cd6874709161df99&=&format=webp&quality=lossless" alt="avatar">
+    <img class="avatar" src="https://media.discordapp.net/attachments/1519917467814727852/1532092400342798538/IMG_6747.jpg?ex=6a6b97bd&is=6a6a463d&hm=4ba3de97a7fef433703b887889be758395e68ff2cdea3b922109b8eea48df02c&=&format=webp" alt="avatar">
   </div>
 
-  <h1 id="sweepTitle">Sot!</h1>
+  <h1 id="sweepTitle">Overkill!</h1>
 
   <button class="discord-btn" id="discordBtn">
     <svg viewBox="0 0 24 24" fill="none"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.099.246.197.373.291a.077.077 0 0 1-.006.128 12.3 12.3 0 0 1-1.873.892.076.076 0 0 0-.04.106c.36.698.772 1.362 1.225 1.994a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.001-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028ZM8.02 15.33c-1.183 0-2.157-1.086-2.157-2.42 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.42-2.157 2.42Zm7.975 0c-1.183 0-2.157-1.086-2.157-2.42 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.42-2.157 2.42Z"/></svg>
@@ -280,12 +280,15 @@
   <div class="panel" id="panel-frens">
     <div class="panel-inner">
       <ul class="frens-list">
+        <li>crazy &lt;3</li>
         <li>unity</li>
         <li>crazy</li>
         <li>bunny</li>
-        <li>ray</li>
+        <li>sot</li>
         <li>frog</li>
         <li>why</li>
+        <li>Vext</li>
+        <li>Syri</li>
       </ul>
     </div>
   </div>
@@ -318,8 +321,8 @@
   //            autoplay muted, loop, and cover the whole page
   // ============================================================
   const BACKGROUND = {
-    type: 'video',   // 'image' | 'video' | 'none'
-    url: 'https://github.com/unity-cpu/sot-bio/raw/refs/heads/main/0729.mp4'  // e.g. 'https://i.imgur.com/yourimage.jpg'
+    type: 'image',   // 'image' | 'video' | 'none'
+    url: 'https://cdn.discordapp.com/attachments/1519917467814727852/1532092295984189581/IMG_6746.jpg?ex=6a6b97a4&is=6a6a4624&hm=0746d5471ccac6a69ca55ce744e88cf39fd385219687cb5428db088b6967cd97&'  // e.g. 'https://i.imgur.com/yourimage.jpg'
                     // or   'https://example.com/yourvideo.mp4'
   };
 
@@ -344,7 +347,7 @@
 
   // ============ CONFIG: discord invites ============
   const INVITES = [
-    { label: "techno tag", url: "https://discord.gg/technotag" },
+    { label: "techno tag", url: "https://discord.gg/asktodm" },
     { label: "cgh", url: "https://discord.gg/npD2H4AFc2" },
   ];
 
@@ -363,7 +366,7 @@
   // discord copy-to-clipboard
   const discordBtn = document.getElementById('discordBtn');
   const discordLabel = document.getElementById('discordLabel');
-  const discordTag = 'sot1231';
+  const discordTag = 'overkillistuff';
   discordBtn.addEventListener('click', () => {
     navigator.clipboard?.writeText(discordTag).catch(()=>{});
     discordLabel.textContent = 'Copied!';
@@ -441,8 +444,8 @@
 
   const SWEEP_DURATION = 1.1;   // seconds
   const SWEEP_SPEED = 0.7;      // was 2.2 — slowed down
-  const COLOR_A = [255, 60, 60];    // red
-  const COLOR_B = [255, 165, 0];    // orange
+  const COLOR_A = [255, 20, 147];   // pink (deep pink)
+  const COLOR_B = [128, 0, 128];    // purple
 
   function lerp(a, b, t){ return a + (b - a) * t; }
   function repeat(t, length){ return t - Math.floor(t / length) * length; }
